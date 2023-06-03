@@ -7,13 +7,13 @@ import (
 
 func calculator() {
 	var user_answer int
-	answers := []string{
+	choice_operator := []string{
 		"+",
 		"-",
 		"*",
 		"/",
 	}
-	operator := answers[rand.Intn(len(answers))]
+	operator := choice_operator[rand.Intn(len(choice_operator))]
 	num1 := rand.Intn(100)
 	num2 := rand.Intn(50)
 	println(num1, operator, num2, "= ?")
